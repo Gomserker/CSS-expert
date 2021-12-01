@@ -1,23 +1,21 @@
 .father {
   display: flex;
-  justify-content: space-evenly;
   height: 100vh;
+  align-content: space-between;
 }
 
 .child {
-  width: 200px;
-  height: 200px;
+  flex-basis: 200px;
   background: peru;
   color: white;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
 }
 
 .child:nth-child(2) {
-  align-self: center;
-  order: 3;
-}
-
-.child:nth-child(3) {
-  align-self: flex-end;
-  order: 2;
+  background-color: #000;
+  flex-grow: 0;
 }
